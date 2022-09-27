@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.set-api {
+  background-image: url("https://wallup.net/wp-content/uploads/2018/03/23/557971-Firewatch-minimalism-sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px;
+  background-color: #041e42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 550px;
+}
+
+.input-container input {
+  width: 550px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #000034;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.input-container button {
+  position: absolute;
+  right: 5px;
+  top: 2;
+  width: 150px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.input-container button:hover {
+  background-color: #000034;
+  border: 2px solid rgba(172, 255, 47, 0.671);
+  color: white;
+  cursor: pointer;
+}
+
+.home-container {
+  background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/55/87/rXujV6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1920px;
+  background-color: #041e42;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container .loading-message {
+  margin-top: 20px;
+  color: #121624;
+  text-shadow: 2px 2px white;
+}
+
+.home-container .error-message {
+  margin-top: 20px;
+  color: #121624;
+  text-shadow: 2px 2px white;
+}
+
+.home-top {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #1b327c75;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.home-top h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 4px 4px #041e42;
+}
+
+.home-top p {
+  margin-bottom: 10px;
+  color: greenyellow;
+}
+
+.home-top .desc {
+  color: white;
+  font-size: 1rem;
+}
+
+.home-mid {
+  margin-top: 25px;
+}
+
+.home-mid input {
+  width: 320px;
+  height: 45px;
+  border-radius: 12px;
+  margin: 0 15px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+  padding: 5px 10px;
+  background-color: #121624;
+  color: white;
+  transition: 1s;
+}
+
+.home-mid input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgb(1, 153, 153);
+}
+
+.home-mid button {
+  width: 100px;
+  height: 45px;
+  border-radius: 12px;
+  background-color: #121624;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+
+.home-mid button:hover {
+  background-color: rgb(1, 153, 153);
+  color: white;
+  border: 1px solid white;
+}
+
+.home-weather-data {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  height: 350px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  align-items: center;
+  color: #041e42;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.home-weather-data .img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.home-weather-data .img-circle {
+  background-color: #121624;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.home-weather-data .weather {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #041e42;
+  font-size: 1.5rem;
+}
+
+.home-weather-data .weather h1 {
+  font-size: 3.5rem;
+}
+
+.home-weather-data .description {
+  margin-top: 3rem;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 25px;
+  color: rgba(22, 1, 97, 0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-top .title {
+    font-size: 3rem;
+  }
+
+  .home-top .top-title {
+    font-size: 14px;
+  }
+
+  .home-top .desc {
+    font-size: 12px;
+  }
+
+  .home-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-mid button {
+    width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #121624;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+  }
+
+  .home-weather-data {
+    width: 400px;
+    height: 350px;
+  }
+
+  .home-weather-data .weather h1 {
+    font-size: 3rem;
+  }
+
+  .home-weather-data .description {
+    margin-top: 3rem;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 25px;
+    color: rgba(22, 1, 97, 0.6);
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+  }
+
+  .input-container input {
+    width: 250px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #000034;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+  }
+
+  .input-container button {
+    position: absolute;
+    right: 5px;
+    top: 2;
+    width: 60px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+}
